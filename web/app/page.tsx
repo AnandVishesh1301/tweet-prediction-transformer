@@ -182,6 +182,40 @@ export default function Home() {
           >
             {loading ? 'Generating…' : 'Generate Tweet'}
           </button>
+
+          {/* Project Links */}
+          <div className="mt-8 pt-4 border-t border-[#2c355c] flex justify-center space-x-8">
+            <a 
+              href="https://github.com/AnandVishesh1301/tweet-prediction-transformer" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex flex-col items-center hover:opacity-80 transition-opacity"
+            >
+              <Image
+                src="/github.png"
+                alt="GitHub"
+                width={36}
+                height={36}
+                className="mb-1"
+              />
+              <span className="text-sm font-medium">Source Code</span>
+            </a>
+            <a 
+              href="https://huggingface.co/spaces/AnandVishesh1301/tweet-prediction-hf/tree/main" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex flex-col items-center hover:opacity-80 transition-opacity"
+            >
+              <Image
+                src="/huggingface.png"
+                alt="Hugging Face"
+                width={36}
+                height={36}
+                className="mb-1"
+              />
+              <span className="text-sm font-medium">Model Inference</span>
+            </a>
+          </div>
         </section>
       </main>
     </>
